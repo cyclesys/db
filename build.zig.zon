@@ -1,0 +1,19 @@
+.{
+    .name = "cycle_db",
+    .version = "0.1.0",
+    .paths = .{
+        "src/",
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+    },
+    .dependencies = .{
+        .cycle = .{
+            .path = "../lib",
+        },
+        .rocksdb = .{
+            .url = "https://github.com/cyclesys/rocksdb/archive/6d5ee68183ac393551407fedf494b7216d3cc576.tar.gz",
+            .hash = "1220fa0d02c9a0e16faff9049ad581fb0fbfe90c2bb40858f7a839f19935dc7d9bc0",
+        },
+    },
+}
